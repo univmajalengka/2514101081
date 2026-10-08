@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tour Yogyakarta</title>
+    
+    <!-- 1. Memanggil Font Poppins dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- 2. Memanggil CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- 3. Memanggil CSS PALING BAWAH agar bisa menimpa Bootstrap -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- NAVBAR (Menu Aplikasi) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Wisata Jogja</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#fasilitas">Fasilitas Wisata</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#paket">Paket Wisata</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pesan">Pemesanan</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER / JUMBOTRON -->
+    <!-- JUMBOTRON / HERO SLIDER -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+
+    <!-- Indikator -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Isi Slider -->
+    <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <img src="img/merapi.jpg" class="d-block w-100" alt="Gunung Merapi">
+
+            <div class="carousel-caption">
+                <h1 class="fw-bold">Selamat Datang di Wisata Jogja</h1>
+                <p>Menikmati alam dan budaya Yogyakarta dengan seru</p>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <img src="img/borobudur.jpg" class="d-block w-100" alt="Candi Borobudur">
+
+            <div class="carousel-caption">
+                <h1 class="fw-bold">Candi Borobudur</h1>
+                <p>Menikmati kemegahan candi bercorak Buddha</p>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <img src="img/prambanan.jpg" class="d-block w-100" alt="Candi Prambanan">
+
+            <div class="carousel-caption">
+                <h1 class="fw-bold">Candi Prambanan</h1>
+                <p>Menjelajahi keindahan candi Hindu</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Tombol kiri -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <!-- Tombol kanan -->
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+
+    <!-- KONTEN UTAMA -->
+    <section id="paket" class="container my-5">
+        <div class="row">
+            <!-- Kolom Kiri: Daftar Paket Wisata -->
+<div class="col-md-8">
+    <h2 class="mb-4">Daftar Paket Wisata</h2>
+    
+    <!-- Row ini membungkus semua Card -->
+    <div class="row">
+        
+        <!-- Baris 1: Card 1 -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm text-start">
+                <img src="img/merapi.jpg" class="card-img-top" alt="Merapi Jeep Tour">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Merapi Jeep Tour</h5>
+                    <p class="card-text">Menyusuri perkampungan dan sungai di bawah kaki gunung merapi.</p>
+                    <p class="text-success fw-bold">Rp 175.000 / orang</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Baris 1: Card 2 -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm text-start">
+                <img src="img/borobudur.jpg" class="card-img-top" alt="Candi Borobudur">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Candi Borobudur</h5>
+                    <p class="card-text">Menikmati kemegahan candi Buddha terbesar di dunia dalam peninggalan sejarah.</p>
+                    <p class="text-success fw-bold">Rp 50.000 / orang</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Baris 2: Card 3 -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm text-start">
+                <!-- Ganti nama file gambarnya -->
+                <img src="img/prambanan.jpg" class="card-img-top" alt="Nama Paket 3">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Candi Prambanan</h5>
+                    <p class="card-text">Menulusuri candi bergaya Hindu.</p>
+                    <p class="text-success fw-bold">Rp 50.000 / orang</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Baris 2: Card 4 -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm text-start">
+                <!-- Ganti nama file gambarnya -->
+                <img src="img/pictniq.jpg" class="card-img-top" alt="Nama Paket 4">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Pictniq</h5>
+                    <p class="card-text">Menjelajahi berbagai icon dunia dalam satu tempat.</p>
+                    <p class="text-success fw-bold">Rp 35.000 / orang</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+           <!-- Kolom Kanan: Link Video Youtube & Fasilitas -->
+<div class="col-md-4">
+    
+    <!-- 1. Bagian Video -->
+    <h2 class="mb-4">Video Aktivitas</h2>
+
+<!-- Gunakan class 'ratio ratio-16x9' bawaan Bootstrap ini -->
+<div class="ratio ratio-16x9 shadow-sm rounded mb-5">
+    <iframe 
+        src="https://www.youtube.com/embed/1V_4-f5Ocy4" 
+        title="Wisata Gunung Bromo" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+    <!-- 2. Bagian Fasilitas Kendaraan -->
+	 <section id="fasilitas">
+    <h2 class="mb-4">Fasilitas Transportasi</h2>
+    <div class="card shadow-sm text-start">
+        <!-- Header Card dengan warna gelap agar senada dengan Navbar -->
+        <div class="card-header bg-dark text-white fw-bold">
+            Pilihan Armada Kami
+        </div>
+        <!-- List Group Bootstrap untuk membuat daftar yang rapi bergaris -->
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">🚐 <strong>Mini Bus (Hiace/Elf)</strong><br><small class="text-muted">Kapasitas 12 - 15 Orang</small></li>
+            <li class="list-group-item">🚌 <strong>Medium Bus</strong><br><small class="text-muted">Kapasitas 30 - 35 Orang</small></li>
+            <li class="list-group-item">🚌 <strong>Big Bus (SHD/HDD)</strong><br><small class="text-muted">Kapasitas 45 - 50 Orang</small></li>
+            <li class="list-group-item">🚍 <strong>Bus Double Decker</strong><br><small class="text-muted">Kelas VIP Premium</small></li>
+        </ul>
+    </div>
+
+</div>
+
+</section>
+
+    <!-- FORM PEMESANAN -->
+    <section id="pesan" class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 bg-white p-4 border rounded shadow-sm">
+                <h3 class="text-center mb-4">Form Pemesanan</h3>
+                <!-- ID formPemesanan ini digunakan untuk dihubungkan ke JavaScript -->
+                <form id="formPemesanan">
+                    <div class="mb-3">
+                        <label class="form-label">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="inputNama">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Pilih Paket</label>
+                        <select class="form-select" id="inputPaket">
+                            <option value="">-- Pilih Paket Wisata --</option>
+                            <option value="Susur Sungai">Merapi Jeep Tour</option>
+                            <option value="Outbound">Candi Borobudur</option>
+							<option value="Outbound">Candi Prambanan</option>
+							<option value="Outbound">Pictniq</option>
+                        </select>
+                    </div>
+
+                    <!-- 3. Pilihan Kendaraan -->
+                    <div class="mb-3">
+                        <label class="form-label">Pilih Armada Kendaraan</label>
+                        <select class="form-select" id="inputKendaraan" required>
+                            <option value="">-- Pilih Kendaraan --</option>
+                            <option value="Mini Bus (Hiace/Elf)">Mini Bus (12-15 Orang)</option>
+                            <option value="Medium Bus">Medium Bus (30-35 Orang)</option>
+                            <option value="Big Bus">Big Bus (45-50 Orang)</option>
+                            <option value="Double Decker">Bus Double Decker (VIP)</option>
+                        </select>
+                    </div>
+                    
+                    <!-- 4. Tombol Kirim -->
+                    <button type="submit" class="btn btn-primary w-100">Kirim Pesanan</button>
+                </form>
+
+            </div> <!-- Penutup col-md-6 -->
+        </div> <!-- Penutup row -->
+    </section> <!-- Penutup section  -->
+
+    <!-- FOOTER[cite: 37] -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2026 Wisata Jogja - Tugas Pengembangan Aplikasi Berbasis Web - Khalil Albar</p>
+        </div>
+    </footer>
+
+    <!-- Memanggil file Javascript Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Memanggil file Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

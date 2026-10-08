@@ -1,0 +1,70 @@
+/* Mengatur font seluruh web dan warna latar belakang */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8; /* Warna abu-abu*/
+}
+
+/* Mengatur Jumbotron agar menampilkan foto secara penuh */
+.jumbotron-kustom {
+    /* Pastikan kamu punya foto bernama foto-utama.jpg di dalam folder img */
+    background-image: url('../img/merapi.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 20px;
+    
+    /* Membuat efek overlay gelap */
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+}
+
+/* Membuat efek interaktif saat kursor menyentuh kartu paket wisata */
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #1991b5;
+}
+
+/* Modifikasi tombol Bootstrap dengan warna kustommu */
+.btn-kustom {
+    background-color: #1991b5;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-kustom:hover {
+    background-color: #137491;
+    color: white;
+}
+
+/* Mengatur ukuran foto pada Card agar seragam */
+.card-img-top {
+    height: 250px; /* Bisa diubah */
+    object-fit: cover; /* Memastikan gambar tidak gepeng */
+    object-position: center; /* Memfokuskan potongan gambar di tengah */
+}
+
+#heroCarousel {
+    width: 100%;
+}
+
+#heroCarousel .carousel-item {
+    height: 450px;
+}
+
+#heroCarousel .carousel-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+#heroCarousel .carousel-caption h1 {
+    font-size: 2.5rem;
+}
+
+#heroCarousel .carousel-caption p {
+    font-size: 1.1rem;
+}
